@@ -478,7 +478,7 @@ h1 {
 }
 
 #masthead {
-    background: none repeat scroll 0 0 #45ac9d; /* background color changed */
+    background: none repeat scroll 0 0 red; /* background color changed */
     color: white;
     height: 30px;
     padding: 10px 0;
@@ -1215,7 +1215,7 @@ section .navigation {
 }
 
 .button {
-    background: none repeat scroll 0 0 #45ac9d;
+    background: none repeat scroll 0 0 red;
     color: white;
     font-family: "montserrat";
     font-size: 20px;
