@@ -478,14 +478,14 @@ h1 {
 }
 
 #masthead {
-    background: none repeat scroll 0 0 red;
+    background: none repeat scroll 0 0 yellow;
     color: white;
     height: 30px;
     padding: 10px 0;
 }
 
 #masthead a {
-	color:white;
+	color:yellow;
 }
 
 #masthead h1 {
