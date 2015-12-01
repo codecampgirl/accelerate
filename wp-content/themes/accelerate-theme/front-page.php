@@ -13,6 +13,9 @@
  */
 
 get_header(); ?>
+<!-- added to see $wp_query OBJECT on my homepage -->
+<pre><?php print_r($wp_query->posts); exit; ?></pre>
+<!-- end added to see $wp_query OBJECT -->
 
 <section class="home-page">
 	<div class="site-content">
