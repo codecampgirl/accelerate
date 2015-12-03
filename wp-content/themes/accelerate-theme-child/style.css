@@ -10,7 +10,7 @@
  Text Domain:  accelerate-theme-child
 */  
 
-/* @import url("../accelerate-theme/style.css"); */
+@import url("../accelerate-theme/style.css");
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -19,7 +19,7 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 .button {
-	background: none repeat scroll 0 0 blue;
+	background: none repeat scroll 0 0 tomato;
 }
 
 /* blog post on homepage */
