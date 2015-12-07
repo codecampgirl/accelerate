@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /Skillcrush_WP_project/accelerate/
+RewriteBase /accelerate/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Skillcrush_WP_project/accelerate/index.php [L]
+RewriteRule . /accelerate/index.php [L]
 </IfModule>
 
 # END WordPress
