@@ -20,7 +20,7 @@
 				<p>&copy; <?php bloginfo('title'); ?>, LLC
 				</div>
 				
-			<nav class="social-media-navigation" role="navigation">
+			<nav class="social-media-navigation soc-icon" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
 			</nav>
 
