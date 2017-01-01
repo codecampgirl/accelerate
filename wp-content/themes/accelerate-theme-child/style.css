@@ -18,6 +18,26 @@
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
+#masthead nav ul {
+    margin: 0 0;
+    
+}
+#masthead nav ul li {
+    float: left;
+    margin: 0 10px;
+}
+#masthead nav ul li a:link {
+    
+}
+#masthead nav ul li a:hover {
+    
+}
+#masthead nav ul li a:active {
+    
+}
+a.current {
+  font-weight: bold;
+}
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -44,8 +64,78 @@
 	text-transform: uppercase;
 }
 
+/* Case study styles */
+article.case-study {
+    margin: 40px 0 0;
+}
+aside.case-study-sidebar {
+    float:left;
+    width: 314px;
+    margin: 0 40px 0 0 ;
+}
+div.case-study-images {
+    float: right;
+    width: 606px;
+}
+div.case-study-images img {
+    /* display: block; */
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+}
+aside.case-study-sidebar h2 {
+    font-weight: 500;
+}
+aside.case-study-sidebar h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #757E85;
+}
+aside.case-study-sidebar h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5F676C;
+}
+aside.case-study-sidebar p {
+    padding-top: 1em;
+}
+.case-study-sidebar a:link {
+    font-weight: bold;
+}
+.case-study-sidebar a:hover {
+    color: #45ac9d;
+    text-decoration: underline;
+}
+
+
+/* homepage styles */
+
+/* homepage featured work styles */
+.homepage-featured-work {
+    /* background-color: yellow; */ /* temp yellow background to see container */
+    margin: 0 auto;
+    padding: 0 0 8em 0;
+    list-style-type: none;
+}
+.individual-featured-work {
+    display: inline-block;
+    width: 30%;
+    padding: 0 24px 0 4px;
+}
+/* .individual-featured-work img {
+    padding: 0 22px 0 0;
+} */
+/* li.individual-featured-work:last-child {
+    padding-right:0px;
+} */
+/* .individual-featured-work figure {
+    text-align: center;
+} */
+.featured-work h4 {
+    text-align: center;
+}
+
 /* blog post on homepage */
-/* .recent-posts {
+.recent-posts {
 	overflow: hidden;
 }
 .blog-post {
@@ -67,4 +157,112 @@
 	font: 700 15px 'Montserrat';
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+
+
+/*ul.homepage-featured-work {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+li.individual-featured-work {
+    display: inline;
+    float: left;
+    position: relative;
+    width: 30%;
+    margin: 0 0 0 32px;
+    padding-bottom: 130px;
 } */
+/* figure {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+/* ul.homepage-featured-work caption {
+    color: red;
+    display: block;
+} */
+
+
+
+
+
+/* .individual-featured-work ul {
+    
+} */
+/* .individual-featured-work ul li {
+    display: inline-block;
+} */
+/*.individual-featured-work img {
+    width:
+    margin: 0 auto;
+    border: 3px solid red; /* temporary red border */
+} */
+
+/* .individual-featured-work {
+    display: inline;
+    /* float: left; */
+    /* width: 200px;
+    margin: 0px;
+    padding: 0px;
+    border: 5px solid #73AD21; */
+}
+
+
+/* general styles */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* social media menu */
+/* .social-media-navigation {
+    display: inline-block;
+} */
+.social-media-navigation ul li {
+    display: inline-block;
+}
+
+
+/* styles carried over from old site */
+.social-btns {
+	margin: 35px 0;
+}
+.social-btns .soc-icon {
+	background: url(../img/soc-sprite.png) no-repeat;
+	/* display: inline-block; */
+	height: 22px;
+	width: 22px;
+	margin-left: 2px;
+    -webkit-transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+    transition: 500ms ease-in-out;
+}
+.social-btns .soc-icon.tw {
+	background-position: 0 0;
+}
+.social-btns .soc-icon.fb {
+	background-position: -28px 0;
+}
+.social-btns .soc-icon.ln {
+	background-position: -56px 0;
+}
+.social-btns .soc-icon.db {
+	background-position: -83px 0;
+	width: 23px;
+}
+.social-btns .soc-icon:hover {
+	-moz-transform: scale(1) rotate(360deg);
+	-webkit-transform: scale(1) rotate(360deg);
+	-o-transform: scale(1) rotate(360deg);
+	-ms-transform: scale(1) rotate(360deg);
+	transform: scale(1) rotate(360deg);
+}

@@ -17,7 +17,7 @@
 			<div class="site-info">
 				<div class="site-description">
 				<p><?php bloginfo('description'); ?></p>
-				<p>&copy; <?php bloginfo('title'); ?>, LLC
+				<p>&copy; 2016 - <?php echo date('Y '); ?><?php bloginfo('title'); ?>, LLC
 				</div>
 				
 			<nav class="social-media-navigation soc-icon" role="navigation">
