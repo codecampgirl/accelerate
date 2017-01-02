@@ -111,7 +111,6 @@ aside.case-study-sidebar p {
 
 /* homepage featured work styles */
 .homepage-featured-work {
-    /* background-color: yellow; */ /* temp yellow background to see container */
     margin: 0 auto;
     padding: 0 0 8em 0;
     list-style-type: none;
@@ -121,6 +120,7 @@ aside.case-study-sidebar p {
     width: 30%;
     padding: 0 24px 0 4px;
 }
+
 /* .individual-featured-work img {
     padding: 0 22px 0 0;
 } */
