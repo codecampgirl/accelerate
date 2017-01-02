@@ -120,6 +120,11 @@ aside.case-study-sidebar p {
     width: 30%;
     padding: 0 24px 0 4px;
 }
+.homepage-featured-work h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
 
 /* .individual-featured-work img {
     padding: 0 22px 0 0;
@@ -130,8 +135,9 @@ aside.case-study-sidebar p {
 /* .individual-featured-work figure {
     text-align: center;
 } */
-.featured-work h4 {
+.featured-work h4 {  
     text-align: center;
+    padding: 0 0 2.4em 0;
 }
 
 /* blog post on homepage */
