@@ -246,13 +246,6 @@ ul.tweets {
     margin-top: 36px;
     line-height: 1.65;
 }
-/* #pi_simpletwittertweets-3 .widget {
-    border: 1px solid blue;
-} */
-/* #follow-btn {
-    background-color: #45ac9d;
-} */
-
 .btn {
     position: relative;
     height: 20px;
@@ -264,7 +257,6 @@ ul.tweets {
     border-radius: 3px;
     box-sizing: border-box;
 }
-
 .btn-o {
     max-width: 100%;
    /*  background-color: #fff;

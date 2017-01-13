@@ -1,17 +1,10 @@
 <?php
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme and one
- * of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query,
- * e.g., it puts together the home page when no home.php file exists.
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
+ * The custom 404 page file
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Accelerate_Marketing
+ * @since Accelerate Marketing 1.1
  */
 
 get_header(); ?>
@@ -35,7 +28,7 @@ get_header(); ?>
 	
 				<div class="page-wrapper">
 					<div class="page-content">
-						<h2><?php _e( 'We have been looking left and right, but could not find what you have been looking for. We promise to do better next time.', 'twentythirteen' ); ?></h2>
+						<h2><?php _e( 'We have been looking left and right, but could not find the page you requested. We promise to do better next time.', 'twentythirteen' ); ?></h2>
 						<h3><?php _e( 'Please check out our <a href="http://localhost:8888/accelerate/blog/">blog</a> or some of our <a href="http://localhost:8888/accelerate/case-studies/">featured work</a>.', 'twentythirteen' ); ?></h3>
 						<h2><?php _e( 'Maybe try a search?', 'twentythirteen' ); ?></h2>
 						<?php get_search_form(); ?>
