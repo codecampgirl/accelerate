@@ -26,7 +26,7 @@
  */
 
  
- 
+ // add custom post type funtion for case-studies, our-services //
  function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -39,5 +39,49 @@
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+    
+    register_post_type( 'our_services',
+        array(
+            'labels' => array(
+                'name' => __( 'Our Services' ),
+                'singular_name' => __( 'Our Service' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'our-services' ),
+        )
+    );
 }
 add_action( 'init', 'create_custom_post_types' );
+
+// add twitter sidebar to homegape //
+function accelerate_theme_child_widget_init() {
+	
+	register_sidebar( array(
+	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+	    'id' => 'sidebar-2',
+	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	    'after_widget' => '</aside>',
+	    'before_title' => '<h3 class="widget-title">',
+	    'after_title' => '</h3>',
+	) );
+	
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+
+// add sidebar to pages //
+// Register widget area 
+function accelerate_theme_child_widgets_init() {
+	
+        register_sidebar( array(
+		'name'          => __( 'Sidebar 1', 'accelerate-theme-child' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'accelerate-theme-child' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widgets_init' );

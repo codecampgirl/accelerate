@@ -19,7 +19,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
+				<a class="button" href="<?php // echo home_url(); ?>/blog">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
@@ -36,7 +36,7 @@ get_header(); ?>
 				$image_1 = get_field("image_1");
 				$size = "medium";	
 			?>
-		
+			
 			<li class="individual-featured-work">
 				<figure>
 					<?php echo wp_get_attachment_image($image_1, $size); ?>
@@ -65,6 +65,15 @@ get_header(); ?>
 			<?php endwhile; ?> 
 			<?php wp_reset_query(); // resets the altered query bak to the original ?>
 		</div>
+		<div class="twitter">
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			
+			<div class="blog-post widget PI_SimpleTwitterTweets"><a class="read-more-link" href="https://twitter.com/mctrebo">Follow Us &rsaquo;</a></div>
+				</div>
+		</div>
+			<?php endif; ?>
 	</div>
 </section><!-- .home-page -->
 
