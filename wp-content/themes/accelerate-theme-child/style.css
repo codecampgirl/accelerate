@@ -41,30 +41,12 @@ a.current {
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
-
-.blog-post {
-	width: 50%;
-}
-.blog-post h4 {
-	font-size: 16px;
-	font-family: 'Montserrat';
-	color: #a6a6a6;
-	text-transform: uppercase;
-}
-.blog-post h2 {
-	font-size: 24px;
-	font-family: 'Montserrat';
-	font-weight: bold;
-}
-.blog-post .read-more-link {
-	font-size: 16px; /* changed */
-	font-family: 'Montserrat';
-	font-weight: bold;
-	color: #45ac9d;
-	text-transform: uppercase;
+.button:hover {
+    background-color: #337f75;
 }
 
-/* Case study styles */
+
+/* CASE STUDY STYLES */
 article.case-study {
     margin: 40px 0 0;
 }
@@ -106,10 +88,87 @@ aside.case-study-sidebar p {
     text-decoration: underline;
 }
 
+/* OUR SERVICES - ABOUT PAGE */
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 110px;
+    margin: 0 0 80px;
+    padding: 100px 0;
+    background-position: center bottom;
+}.about-taxi {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.about-taxi h1 {
+	color: #fff;
+	font-weight: bold;
+	font: 24px "open sans";
+	line-height: 1.6;
+	margin-top: -20px;
+}
+.about-taxi a {
+    color: #45ac9d;
+}
+.about-taxi h3 {
+    color: white;
+    font-family: "open sans";
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px 200px 60px 200px;
+    line-height: 1.5em;
+    /* margin: 16px 0 80px; */
+}
+.services {
+    text-align: center;
+}
+.services h6 {
+    text-transform: uppercase;
+}
+article.our-services {
+    margin: 40px 0 0;
+    width: 100%;
+    background-color: lightblue;
+}
+article.our-services img {
+    float: left;
+    width: 120px;
+    height: auto;
+    border: 0px;
+}
+.flex-container1 {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+.flex-container2 {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    /* background-color: cornflowerblue; */
+    height: auto;
+    flex-direction: row-reverse;
+}
+.icon-left {
+    width: 100%;
+    height: auto;
+    padding-right: 15px;
+}
+.icon-right */ {
+    width: 100%;
+    height: auto;
+    padding-left: 1.5em;
+    border: 2px solid red;
+}
 
-/* homepage styles */
+/* END OUR SERVICES STYLES */
 
-/* homepage featured work styles */
+
+/* HOMEPAGE STYLES */
+/* HOMEPAGE FEATURED WORK */
 .homepage-featured-work {
     margin: 0 auto;
     padding: 0 0 8em 0;
@@ -125,29 +184,21 @@ aside.case-study-sidebar p {
     font-weight: 600;
     text-align: center;
 }
-
-/* .individual-featured-work img {
-    padding: 0 22px 0 0;
-} */
-/* li.individual-featured-work:last-child {
-    padding-right:0px;
-} */
-/* .individual-featured-work figure {
-    text-align: center;
-} */
 .featured-work h4 {  
     text-align: center;
     padding: 0 0 2.4em 0;
 }
 
-/* blog post on homepage */
+/* BLOG POST ON HOMEPAGE */
 .recent-posts {
 	overflow: hidden;
+	/* background-color: #dedede; */ /* for testing purposes only */
 }
 .blog-post {
 	width: 44.75%;
 	padding-right: 50px;
 	float: left;
+	/* background-color: yellow; */ /* for testing purposes only */
 }
 .blog-post h4 {
 	font: 16px 'Montserrat';
@@ -165,110 +216,192 @@ aside.case-study-sidebar p {
 	text-transform: uppercase;
 }
 
-
-
-/*ul.homepage-featured-work {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 130px;
-    text-align: center;
-}
-
-li.individual-featured-work {
-    display: inline;
+/* SIMPLE TWITTER TWEETS PLUGIN MODULE ON HOMEPAGE */
+.twitter {
+    width: 44.75%;
     float: left;
+}
+.tweets::before {
+    content: "@Accelerate";
+    font: 700 24px 'Montserrat';
+    color: #3b3b3b;
+    margin: 36px 0 /* 36px 0 */;
+}
+ul.tweets {
+    list-style-type: none;
+    padding: 0;
+    font: 17px/1.05 'open sans', Arial, sans-serif;
+}
+#pi_simpletwittertweets-3 .widget-title {
+    font: 16px 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 36px;  
+}
+#pi_simpletwittertweets-3 ul.tweets {
+    margin: 0 0 24px 0;
+}
+#pi_simpletwittertweets-3 li {
+    margin-top: 36px;
+    line-height: 1.65;
+}
+/* #pi_simpletwittertweets-3 .widget {
+    border: 1px solid blue;
+} */
+/* #follow-btn {
+    background-color: #45ac9d;
+} */
+
+.btn {
     position: relative;
-    width: 30%;
-    margin: 0 0 0 32px;
-    padding-bottom: 130px;
-} */
-/* figure {
-    display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 40px;
-    -webkit-margin-end: 40px;
+    height: 20px;
+    padding: 1px 8px 1px 6px;
+    font-weight: 500;
+    color: #45ac9d/* #fff */;
+    cursor: pointer;
+    background-color: #45ac9d /* #1b95e0 */;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
-/* ul.homepage-featured-work caption {
-    color: red;
-    display: block;
-} */
 
-
-
-
-
-/* .individual-featured-work ul {
-    
-} */
-/* .individual-featured-work ul li {
+.btn-o {
+    max-width: 100%;
+   /*  background-color: #fff;
+    color: #45ac9d; *
+}
+.btn-o, .count-o, .btn, .btn .label, #count {
     display: inline-block;
-} */
-/*.individual-featured-work img {
-    width:
-    margin: 0 auto;
-    border: 3px solid red; /* temporary red border */
-} */
-
-/* .individual-featured-work {
-    display: inline;
-    /* float: left; */
-    /* width: 200px;
-    margin: 0px;
-    padding: 0px;
-    border: 5px solid #73AD21; */
+    vertical-align: top;
+    zoom: 1;
+}
+.intent-meta a{margin-right: 5px;}
+/* data attributes for inserting your icons */
+/* [data-icon]:before {
+	font-family: 'stt-intents'; 
+	content: attr(data-icon);
+	speak: none; */
+	font-weight: normal;
+	font-variant: normal;
+	font-size:16px;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-
-/* general styles */
+/* GENERAL STYLES */
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
-/* social media menu */
-/* .social-media-navigation {
+/* SOCIAL MEDIA MENU */
+.social-media-navigation {
     display: inline-block;
-} */
+}
 .social-media-navigation ul li {
-    display: inline-block;
+    /* display: inline-block; */
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.social-media-navigation a:link {
+    color: #333;
+}
+.social-media-navigation a:hover {
+    color: #45ac9d;
 }
 
+/* CONTACT PAGE AND NINJA CONTACT FORM */
+/*.contact-form {
+    width: 72%;
+    margin: 50px auto;
+} */
+.contact-page {
+    width: 70%;
+    margin: 30px auto;
+}
+/* NINJA CONTACT FORM */
+#nf-field-1 {
+    height: 2.5em;
+}
+#nf-field-2 {
+    height: 2.5em;
+}
+#nf-field-3 {
+    height: 10.5em;
+}
+.nf-field-label {
+    font-size: .8em;
+    color: #666;
+}
+/* CONTACT FORM SEND BUTTON */
+#nf-field-4 {
+    float: right;
+    background-color: #45ac9d;
+    color: #fff;
+    width: 12.5em;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    padding: 1.1em;
+}
+/* Contact Form Send button - hover - mouse over effect */
+#nf-field-4:hover{
+ background-color: #337f75;
+ }
 
-/* styles carried over from old site */
-.social-btns {
-	margin: 35px 0;
+
+
+/* FOOTER SITE NAME LINK */
+a.sitename:link,
+a.sitename:visited,
+a.sitename:hover,
+a.sitename:active {
+    color: #45ac9d;
+    font-weight: bold;
 }
-.social-btns .soc-icon {
-	background: url(../img/soc-sprite.png) no-repeat;
-	/* display: inline-block; */
-	height: 22px;
-	width: 22px;
-	margin-left: 2px;
-    -webkit-transition: 500ms ease-in-out;
-    -moz-transition: 500ms ease-in-out;
-    -o-transition: 500ms ease-in-out;
-    transition: 500ms ease-in-out;
+
+/* 404 PAGE STYLES */
+#error-page {
+    background: url("img/404_desert.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
-.social-btns .soc-icon.tw {
-	background-position: 0 0;
+.content-404 {
+    height: 340px;
+    margin: 0 0 80px;
+    padding: 0px 0;
+    background-position: center bottom; */
 }
-.social-btns .soc-icon.fb {
-	background-position: -28px 0;
+.page-wrapper {
 }
-.social-btns .soc-icon.ln {
-	background-position: -56px 0;
+.page-header {
+	padding-bottom: 37px;
+	padding-top: 50px;
+	border-bottom: 0px;
 }
-.social-btns .soc-icon.db {
-	background-position: -83px 0;
-	width: 23px;
+#error-page h1.page-title {
+    color: #fff;
+    font-family: 'montserrat';
+    font-size: 48px;
+    text-align: center;
 }
-.social-btns .soc-icon:hover {
-	-moz-transform: scale(1) rotate(360deg);
-	-webkit-transform: scale(1) rotate(360deg);
-	-o-transform: scale(1) rotate(360deg);
-	-ms-transform: scale(1) rotate(360deg);
-	transform: scale(1) rotate(360deg);
+.page-content {
+    text-align: center;
+}
+.page-content h2 {
+    line-height: 1.8em;
+}
+.page-content h3 {
+    font-size: 18px;
+    padding-bottom: 24px;
+}
+.page-content p {
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+.page-content a:link {
+    color: #45ac9d;
+    text-decoration: underline;
 }
