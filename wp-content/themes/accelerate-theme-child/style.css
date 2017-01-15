@@ -95,15 +95,16 @@ aside.case-study-sidebar p {
     margin: 0 0 80px;
     padding: 100px 0;
     background-position: center bottom;
-}.about-taxi {
+}
+.about-taxi {
     text-align: center;
     width: 75%;
     margin: 0 auto;
 }
-.about-taxi h1 {
+h1.about-taxi {
 	color: #fff;
-	font-weight: bold;
-	font: 24px "open sans";
+	font-weight: normal;
+	font: 24px 'open sans';
 	line-height: 1.6;
 	margin-top: -20px;
 }
@@ -125,7 +126,73 @@ aside.case-study-sidebar p {
 .services h6 {
     text-transform: uppercase;
 }
+/* Begin copied CASE STUDY STYLES, edit to rename for our_services */
 article.our-services {
+    margin: 40px 0 0;
+}
+aside.our-services-sidebar {
+    float:left;
+    width: 606px /* 314px */;
+    margin: 0 40px 0 0 ;
+}
+div.our-services-images {
+    float: right;
+    width: 314px /* 606px */;
+}
+div.our-services-images img {
+    /* display: block; */
+    margin-top: 110px;
+}
+aside.our-services-sidebar h2 {
+    font-weight: 500;
+}
+/* aside.our-services-sidebar h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #757E85;
+} */
+/* aside.our-services-sidebar h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5F676C;
+} */
+aside.our-services-sidebar p {
+    padding-top: 1em;
+}
+.our-services-sidebar a:link {
+    font-weight: bold;
+}
+.our-services-sidebar a:hover {
+    color: #45ac9d;
+    text-decoration: underline;
+}
+/* end copied case study styles */
+
+/* CONTACT SECTION AND BUTTON ON ABOUT - SERVICES PAGE */
+.contact-container {
+	margin: 0 auto;
+	border-top: 1px dotted #e3e1e1;
+	margin-top: 2.5em;
+	text-align: center;
+}
+.contact h4 {
+	float: left;
+	padding-right: 200px;
+}
+.contact-button {
+    font-size: 14px;
+    background-color: #45ac9d;
+    width: 320px;
+    height: 70px;
+    color: #fff;
+    padding: .6em 2.8em;
+    margin-left: 4em;
+}
+/* end contact button */
+
+
+/* old */
+/* article.our-services {
     margin: 40px 0 0;
     width: 100%;
     background-color: lightblue;
@@ -135,7 +202,7 @@ article.our-services img {
     width: 120px;
     height: auto;
     border: 0px;
-}
+} */
 .flex-container1 {
     display: -webkit-flex; /* Safari */
     -webkit-align-items: center; /* Safari 7.0+ */
@@ -289,22 +356,36 @@ ul.tweets {
     display: table;
 }
 
-/* SOCIAL MEDIA MENU */
-.social-media-navigation {
-    display: inline-block;
+/* SOCIAL MEDIA MENU IN FOOTER */
+.social-media-navigation ul {
+  margin: 0;
 }
 .social-media-navigation ul li {
-    /* display: inline-block; */
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
+  display: inline-block;
+  background-color: #333;
+  margin: 0px 3px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 0.65em;
+  border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%;
 }
-.social-media-navigation a:link {
+.social-media-navigation ul li a {
+    /* top: initial; */
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+}
+.social-media-navigation ul li:hover {
+	background-color: #dedede;
+}
+.social-media-navigation ul li a:hover {
     color: #333;
 }
-.social-media-navigation a:hover {
-    color: #45ac9d;
-}
+/* END SOCIAL MEDIA MENU IN FOOTER */
+
 
 /* CONTACT PAGE AND NINJA CONTACT FORM */
 /*.contact-form {
@@ -396,4 +477,62 @@ a.sitename:active {
 .page-content a:link {
     color: #45ac9d;
     text-decoration: underline;
+}
+
+/* MAILCHIMP NEWSLETTER WIDGET */
+.widget_mc4wp_form_widget {
+    border-bottom: 1px solid #bfbfbf;
+    padding: 20px 31px;
+}
+.mc4wp-form-fields {
+    padding-top: 15px;
+}
+#mc4wp_form_widget-2 label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mc4wp-form-fields input {
+    height: 37px;
+    border: 1px solid #BFBFBF;
+    border-radius: 3px;
+    line-height: 25px;
+    padding: 5px 10px;
+    background: #fff;
+    vertical-align: middle;
+    margin: 0;
+    font: 16px 'OpenSans', Arial, sans-serif;
+}
+.input-button {
+    background-color: #45ac9d!important;
+    color: #fff;
+}
+/* #mc4wp-form-1.button {
+    clear: both;
+    background-color: #aaa;
+    border: 0 none;
+    border-radius: 4px;
+    transition: all 0.23s ease-in-out 0s;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+} */
+
+/* SEARCH FORM */
+.search-form {
+    border-radius: 3px;
+}
+.search-form .input-btn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }

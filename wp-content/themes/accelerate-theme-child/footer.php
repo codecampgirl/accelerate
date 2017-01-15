@@ -5,8 +5,8 @@
  * Contains footer content and the closing of the #main and #page div elements.
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Accelerate_Marketing
+ * @since Accelerate 1.1
  */
 ?>
 
@@ -20,7 +20,7 @@
 					<p>&copy; 2016 - <?php echo date('Y '); ?><?php bloginfo('title'); ?>, LLC
 				</div>
 				
-				<nav class="social-media-navigation social-btns soc-icon" role="navigation">
+				<nav class="social-media-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
 				</nav>
 				

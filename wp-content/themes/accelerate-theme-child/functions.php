@@ -22,7 +22,7 @@
  *
  * @package WordPress
  * @subpackage Accelerate_Marketing
- * @since Accelerate Marketing 1.0
+ * @since Accelerate Marketing 1.1
  */
 
  
