@@ -8,10 +8,9 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Accelerate Marketing
+ * @since Accelerate Marketing 1.0
  */
-
 get_header(); ?>
 
 	<div id="primary" class="site-content">

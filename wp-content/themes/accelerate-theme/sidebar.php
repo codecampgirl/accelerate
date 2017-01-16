@@ -3,16 +3,17 @@
  * The Sidebar containing the main widget area
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Accelerate Marketing
+ * @since Accelerate Marketing 1.0
  */
 ?>
-			<aside class="sidebar">
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>	
-			<?php endif; ?>
 
-		<div class="post-author">
+<aside class="sidebar">
+	<?php if ( is_active_sidebar( 'sidebar-1' ) ) {?>
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>	
+	<?php }	else { ?>
+
+			<div class="post-author">
 					<div class="avatar"><img src="upload/Emily2.jpg" alt=""></div>
 					<div class="intro-text">I’m Emily, the lead developer at <a href="http://skillcrush.com/">Skillcrush</a> as well as an instructor in Ruby and JavaScript. This is my blog full of inspiration.</div>
 				</div>
@@ -54,5 +55,6 @@
 						<li><a href=""><img src="upload/Event-3.jpg" alt=""></a></li>
 					</ul>
 				</div>
+		<?php } ?>
 	
 </aside>
