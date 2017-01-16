@@ -191,7 +191,7 @@ aside.our-services-sidebar p {
 /* end contact button */
 
 
-/* old */
+/* old stuff to be cleaned up*/
 /* article.our-services {
     margin: 40px 0 0;
     width: 100%;
@@ -379,11 +379,11 @@ ul.tweets {
     color: #fff;
 }
 .social-media-navigation ul li:hover {
-	background-color: #dedede;
+	background-color: #45ac9d;
 }
-.social-media-navigation ul li a:hover {
+/* .social-media-navigation ul li a:hover {
     color: #333;
-}
+} */
 /* END SOCIAL MEDIA MENU IN FOOTER */
 
 
@@ -482,7 +482,7 @@ a.sitename:active {
 /* MAILCHIMP NEWSLETTER WIDGET */
 .widget_mc4wp_form_widget {
     border-bottom: 1px solid #bfbfbf;
-    padding: 20px 31px;
+    /* padding: 20px 31px; */
 }
 .mc4wp-form-fields {
     padding-top: 15px;
@@ -529,10 +529,17 @@ a.sitename:active {
 } */
 
 /* SEARCH FORM */
-.search-form {
+#search-2 .widget-title {
+    margin-bottom: 20px;
+}
+.widget_search {
+    border-bottom: 1px solid #bfbfbf;
+}
+.searchform input {
     border-radius: 3px;
 }
-.search-form .input-btn {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+input#searchsubmit {
+    background-color: #45ac9d!important;
+    color: #fff;
+    margin: 25px 0;
 }
