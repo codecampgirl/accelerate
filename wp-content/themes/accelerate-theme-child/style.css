@@ -11,7 +11,33 @@
 */  
 
 @import url("../accelerate-theme/style.css");
+@import url("mobile.css");
 
+/* GENERAL STYLES */
+/* #page {
+	/* max-width: 960px;
+	width: 100%;
+	min-width: 320px;
+	margin: auto;
+	padding:0;
+} */
+.main-content {
+    float: left;
+    padding: 55px 47px 0 0;
+    width: 64%;
+    min-width: 320px;
+    border-right: 1px solid #bfbfbf;
+}
+.main-content .post-entry:last-child {
+	border-bottom: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* HOMEPAGE */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -60,9 +86,10 @@ div.case-study-images {
     width: 606px;
 }
 div.case-study-images img {
-    /* display: block; */
     margin-bottom: 50px;
     border: 1px solid #ddd;
+    max-width: 100%;
+    height:auto;
 }
 aside.case-study-sidebar h2 {
     font-weight: 500;
@@ -120,11 +147,59 @@ h1.about-taxi {
     line-height: 1.5em;
     /* margin: 16px 0 80px; */
 }
-.services {
+.our-services {
     text-align: center;
+    background-color: pink;
+    margin: 40px 0 0;
 }
-.services h6 {
+.our-services h6 {
     text-transform: uppercase;
+}
+/* .about-services p,h2 {
+    width: 70%;
+    background-color: linen;  /* for testing only */
+    float: right;
+} */ /* messes up my 404 page */
+/* .about-services p:nth-child(2) {
+    background: red;
+    float: left;
+} */
+.about-services img {
+    background-color: lightblue; /* for testing only */
+    float: left;
+    margin-top: -2em;
+}
+.about-services img.odd {
+    background-color: yellow; /* for testing only */
+    float: right;
+    margin-top: -2em;
+}
+.about-services img:nth-child(2) {
+    background-color: blue;
+}
+img.alternate:nth-child(2) {
+    /* float: right; */
+}
+/* ul.about-services {
+  width:100%;
+  /* margin-bottom:20px; */
+  overflow:hidden;
+  border-top:1px solid #ccc;
+margin: 0 auto;
+    padding: 0 0 8em 0;
+    list-style-type: none;
+} */
+/* .about-services p {
+    float:left;
+    /* width: 70%; */
+    /* margin: 0 40px 0 0 ; */
+} */
+.about-services p:nth-child(2) {
+    /* background: red; */
+    /* float: right; */
+}
+
+    
 }
 /* Begin copied CASE STUDY STYLES, edit to rename for our_services */
 article.our-services {
@@ -132,17 +207,63 @@ article.our-services {
 }
 aside.our-services-sidebar {
     float:left;
-    width: 606px /* 314px */;
+    width: 70%/* 606px */ /* 314px */;
     margin: 0 40px 0 0 ;
+    text-align: left;
+}
+}
+/* below does nothing */
+aside.our-services-sidebar p:nth-child(2) {
+    float:right;
+    width: 70%/* 606px */ /* 314px */;
+    margin: 0 40px 0 0 ;
+    text-align: right;
+    background-color: blue;
+}
+/* end */
+aside.our-services-sidebar p {
+    margin: 0;
+    padding: 0;
+    /* background-color: purple; */
 }
 div.our-services-images {
     float: right;
-    width: 314px /* 606px */;
+    width: 22%; /* 314px */ /* 606px */;
 }
-div.our-services-images img {
+div.our-services-images:nth-child(2) {
+    float: left;
+    width: 22%; /* 314px */ /* 606px */;
+}
+li.about-services {
+
+  line-height:1.5em;
+  border-bottom:1px solid #ccc;
+  float:left;
+  display:inline;
+  
+
+}
+li.our-services-images img {
+    margin-top: 0px;
+    max-width: 100%;
+    height:auto;
+}
+li.our-services-images img:nth-child(2) {
+    float: left;
+}
+/* li {
+    float:left;
+  display:inline;
+} */
+
+/* div.our-services-images img:nth-child( {
     /* display: block; */
-    margin-top: 110px;
-}
+#double li  { width:50%;}
+    margin-top: 0px;
+    max-width: 100%;
+    height:auto;
+    /* float: left;
+} */
 aside.our-services-sidebar h2 {
     font-weight: 500;
 }
@@ -221,14 +342,18 @@ article.our-services img {
 }
 .icon-left {
     width: 100%;
+    max-width: 100%;
     height: auto;
     padding-right: 15px;
+    float: left;
 }
-.icon-right */ {
+.icon-right {
     width: 100%;
+    max-width: 100%;
     height: auto;
     padding-left: 1.5em;
     border: 2px solid red;
+    float: right;
 }
 
 /* END OUR SERVICES STYLES */
@@ -349,12 +474,6 @@ ul.tweets {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* GENERAL STYLES */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 /* SOCIAL MEDIA MENU IN FOOTER */
 .social-media-navigation ul {
@@ -443,30 +562,38 @@ a.sitename:active {
 #error-page {
     background: url("img/404_desert.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
-.content-404 {
-    height: 340px;
-    margin: 0 0 80px;
-    padding: 0px 0;
-    background-position: center bottom; */
-}
-.page-wrapper {
-}
-.page-header {
-	padding-bottom: 37px;
-	padding-top: 50px;
-	border-bottom: 0px;
-}
 #error-page h1.page-title {
     color: #fff;
     font-family: 'montserrat';
     font-size: 48px;
     text-align: center;
 }
+#error {
+    background-color: lightblue;
+    margin: 0 auto;
+}
+.content-404 {
+    height: 340px;
+    margin: 0 0 80px;
+    padding: 0px 0;
+    background-position: center bottom;
+}
+/* #error.page-content h2,h3 {
+    margin: 0 auto;
+    background-color: magenta;
+} */
+.page-header {
+	padding-bottom: 37px;
+	padding-top: 50px;
+	border-bottom: 0px;
+}
 .page-content {
+    margin: 0 auto;
     text-align: center;
 }
 .page-content h2 {
     line-height: 1.8em;
+    text-align: center;
 }
 .page-content h3 {
     font-size: 18px;
