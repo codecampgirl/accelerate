@@ -18,14 +18,15 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post();
 			    $image_1 = get_field('image_1');
 			    $size = "full";
-			    $services = get_field('services');	
+			    $services = get_field('services');
+			    $client = get_field('client');
 			?>
 			
 			<article class="case-study clearfix">
 					<aside class="case-study-sidebar">
 						<h2><a href="<?php the_permalink(); ?>"></a><?php the_title(); ?></a></h2>
 						<h5><?php echo $services; ?></h5>
-							
+						<h6><?php echo $client; ?></h6>	
 						<?php the_excerpt(); ?>
 						
 						<p><a href="<?php the_permalink(); ?>">View Project &rsaquo;</a></p>
