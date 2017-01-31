@@ -11,7 +11,6 @@
  * @subpackage Accelereate_Marketing
  * @since Accelerate 1.1
  */
-
 get_header(); ?>
 
 	<section class="about-page">
@@ -36,32 +35,29 @@ get_header(); ?>
 		Here's a brief overview of our offered services.</p>
 	    </div>
 	    
-		<div class="about-services"> <!-- was a ul -->
-			<?php query_posts('posts_per_page=5&post_type=our_services'); ?>
+		<div class="services-section"> <!-- was a ul -->
+			<?php query_posts('posts_per_page=4&post_type=our_services'); ?>
 			<?php while ( have_posts() ) : the_post();
-				$service_description = get_field('service_description');
+				// $service_description = get_field('service_description');
 				$icon = get_field('icon');
-				$size = "small";	
+				$size = "full";	
 			?>
-			
-			    <article class="case-study clearfix">
-				<div class="our-services-sidebar "> <!-- was aside -->
-					<div class="about-services">
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<?php the_excerpt(); ?>
-					</div>
-				
+			<article class="individual-services">
 					<div class="our-services-images">
 					    <a href="<?php the_permalink(); ?>">
 					    
-						<?php if(image_1) { ?>	
+						<?php if($icon) { ?>	
 							<?php echo wp_get_attachment_image( $icon, $size ); ?>
 						<?php } ?>
 						
 					    </a>
 					</div>
-				</div>
-			    </article>
+					<div class="our-services-description">
+						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<!-- <p><?php //echo $service_description; ?></p> -->
+						<p><?php the_content(); ?></p>
+					</div>
+			</article>
 			
 			<?php endwhile; ?> 
 			<?php wp_reset_query();  // resets the altered query back to the original ?>
@@ -76,5 +72,6 @@ get_header(); ?>
 
     </div><!-- #content -->
 </div><!-- #primary -->
+
 
 <?php get_footer(); ?>

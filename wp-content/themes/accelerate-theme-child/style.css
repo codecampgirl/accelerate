@@ -14,22 +14,12 @@
 @import url("mobile.css");
 
 /* GENERAL STYLES */
-/* #page {
-	/* max-width: 960px;
-	width: 100%;
-	min-width: 320px;
-	margin: auto;
-	padding:0;
-} */
 .main-content {
-    float: left;
+    /* float: left;
     padding: 55px 47px 0 0;
-    width: 64%;
+    width: 64%; */
     min-width: 320px;
-    border-right: 1px solid #bfbfbf;
-}
-.main-content .post-entry:last-child {
-	border-bottom: 0;
+    /* border-right: 1px solid #bfbfbf;*/
 }
 .clearfix::after {
     content: "";
@@ -46,7 +36,6 @@
 }
 #masthead nav ul {
     margin: 0 0;
-    
 }
 #masthead nav ul li {
     float: left;
@@ -149,56 +138,35 @@ h1.about-taxi {
 }
 .our-services {
     text-align: center;
-    background-color: pink;
-    margin: 40px 0 0;
+    /* background-color: pink; */ /* for testing only */
+    margin: 40px 0 3.5em 0;
 }
 .our-services h6 {
     text-transform: uppercase;
 }
-/* .about-services p,h2 {
-    width: 70%;
-    background-color: linen;  /* for testing only */
-    float: right;
-} */ /* messes up my 404 page */
-/* .about-services p:nth-child(2) {
-    background: red;
-    float: left;
-} */
-.about-services img {
-    background-color: lightblue; /* for testing only */
-    float: left;
-    margin-top: -2em;
-}
-.about-services img.odd {
-    background-color: yellow; /* for testing only */
-    float: right;
-    margin-top: -2em;
-}
-.about-services img:nth-child(2) {
-    background-color: blue;
-}
-img.alternate:nth-child(2) {
-    /* float: right; */
-}
-/* ul.about-services {
-  width:100%;
-  /* margin-bottom:20px; */
-  overflow:hidden;
-  border-top:1px solid #ccc;
-margin: 0 auto;
-    padding: 0 0 8em 0;
-    list-style-type: none;
-} */
-/* .about-services p {
-    float:left;
-    /* width: 70%; */
-    /* margin: 0 40px 0 0 ; */
-} */
-.about-services p:nth-child(2) {
-    /* background: red; */
-    /* float: right; */
-}
 
+/* Ann changes begin */
+.individual-services {
+  overflow: auto;
+}
+.our-services-description {
+  width: 70%;
+  /* background-color: linen; */  /* for testing only */
+  float: left;
+} 
+.our-services-images {
+  float: left;
+  width: 27%;
+  margin-top: 2em;
+}
+.individual-services:nth-child(even) .our-services-images {
+  float: right;
+  margin-left: 3%;
+}
+.individual-services:nth-child(odd) .our-services-images {
+  margin-right: 3%;
+}
+/* Ann changes end */
     
 }
 /* Begin copied CASE STUDY STYLES, edit to rename for our_services */
@@ -227,8 +195,8 @@ aside.our-services-sidebar p {
     /* background-color: purple; */
 }
 div.our-services-images {
-    float: right;
-    width: 22%; /* 314px */ /* 606px */;
+    /*float: right;*/
+    /*width: 22%; /* 314px */ /* 606px */;*/
 }
 div.our-services-images:nth-child(2) {
     float: left;
@@ -292,7 +260,7 @@ aside.our-services-sidebar p {
 /* CONTACT SECTION AND BUTTON ON ABOUT - SERVICES PAGE */
 .contact-container {
 	margin: 0 auto;
-	border-top: 1px dotted #e3e1e1;
+	/* border-top: 1px dotted #e3e1e1; */
 	margin-top: 2.5em;
 	text-align: center;
 }
@@ -310,52 +278,6 @@ aside.our-services-sidebar p {
     margin-left: 4em;
 }
 /* end contact button */
-
-
-/* old stuff to be cleaned up*/
-/* article.our-services {
-    margin: 40px 0 0;
-    width: 100%;
-    background-color: lightblue;
-}
-article.our-services img {
-    float: left;
-    width: 120px;
-    height: auto;
-    border: 0px;
-} */
-.flex-container1 {
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
-    display: flex;
-    align-items: center;
-    background-color: cornflowerblue;
-}
-.flex-container2 {
-    display: -webkit-flex; /* Safari */
-    -webkit-align-items: center; /* Safari 7.0+ */
-    display: flex;
-    align-items: center;
-    /* background-color: cornflowerblue; */
-    height: auto;
-    flex-direction: row-reverse;
-}
-.icon-left {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding-right: 15px;
-    float: left;
-}
-.icon-right {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding-left: 1.5em;
-    border: 2px solid red;
-    float: right;
-}
-
 /* END OUR SERVICES STYLES */
 
 
@@ -578,10 +500,6 @@ a.sitename:active {
     padding: 0px 0;
     background-position: center bottom;
 }
-/* #error.page-content h2,h3 {
-    margin: 0 auto;
-    background-color: magenta;
-} */
 .page-header {
 	padding-bottom: 37px;
 	padding-top: 50px;
@@ -611,7 +529,6 @@ a.sitename:active {
 /* MAILCHIMP NEWSLETTER WIDGET */
 .widget_mc4wp_form_widget {
     border-bottom: 1px solid #bfbfbf;
-    /* padding: 20px 31px; */
 }
 .mc4wp-form-fields {
     padding-top: 15px;
@@ -635,27 +552,6 @@ a.sitename:active {
     background-color: #45ac9d!important;
     color: #fff;
 }
-/* #mc4wp-form-1.button {
-    clear: both;
-    background-color: #aaa;
-    border: 0 none;
-    border-radius: 4px;
-    transition: all 0.23s ease-in-out 0s;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: normal;
-    height: 32px;
-    line-height: 32px;
-    margin: 0 5px 10px 0;
-    padding: 0 22px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: top;
-    white-space: nowrap;
-    width: auto;
-} */
 
 /* SEARCH FORM */
 #search-2 .widget-title {
