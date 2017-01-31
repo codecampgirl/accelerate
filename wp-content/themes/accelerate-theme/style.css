@@ -545,7 +545,7 @@ aside.sidebar {
 	border-left: 1px solid #bfbfbf;
 	padding: 55px 0;
 	float: left;
-	width: 31%;
+	width: 30%;
 }
 
 /* header */
@@ -694,7 +694,7 @@ aside.sidebar {
 	border-bottom: 1px solid #45ac9d;
 }
 .main-content .post-entry:last-child {
-	border-bottom: 0;
+	border-bottom: 0px;
 }
 
 .widget {

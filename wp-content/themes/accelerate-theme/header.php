@@ -32,7 +32,9 @@
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
-<link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet" type='text/css'>
+	<!-- <link href="<?php // bloginfo('template_url'); ?>/accelerate-theme-child/mobile.css" rel="stylesheet" type="text/css" media="all" > -->
+<!-- <link href="<?php // echo get_stylesheet_uri(); ?>" rel="stylesheet" type='text/css'> -->
+<!-- styles loaded and enqueued in functions.php -->
 	<?php wp_head(); ?>
 </head>
 

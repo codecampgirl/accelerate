@@ -26,7 +26,7 @@
  */
 
  
- // add custom post type funtion for case-studies, our-services //
+ // add custom post type function for case-studies, our-services //
  function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -47,8 +47,8 @@
                 'singular_name' => __( 'Our Service' )
             ),
             'public' => true,
-            'has_archive' => true,
-            'rewrite' => array( 'slug' => 'our-services' ),
+            'has_archive' => false,
+            'rewrite' => array( 'slug' => 'services' ),
         )
     );
 }
@@ -70,3 +70,27 @@ function accelerate_theme_child_widget_init() {
 }
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
 
+
+// Monika add mobile stylesheet to child theme //
+// wp_register_style( $handle, $src, $deps, $ver, $media );
+// load css into the website's front-end //
+function add_theme_scripts() {
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
+  
+  // wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+  
+  wp_enqueue_style( 'style', get_template_directory_uri() . 'style.css', array(), '1.0', 'all');
+ 
+  // wp_enqueue_style( 'mobile', get_template_directory_uri() . 'mobile.css', array(), '1.0', 'all');
+ 
+  // wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+ 
+  //  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+  //   wp_enqueue_script( 'comment-reply' );
+  //  }
+}
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+
+
+?>
