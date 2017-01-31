@@ -26,7 +26,7 @@ get_header(); ?>
 					<aside class="case-study-sidebar">
 						<h2><a href="<?php the_permalink(); ?>"></a><?php the_title(); ?></a></h2>
 						<h5><?php echo $services; ?></h5>
-						<h6><?php echo $client; ?></h6>	
+						<h6>Client: <?php echo $client; ?></h6>	
 						<?php the_excerpt(); ?>
 						
 						<p><a href="<?php the_permalink(); ?>">View Project &rsaquo;</a></p>
