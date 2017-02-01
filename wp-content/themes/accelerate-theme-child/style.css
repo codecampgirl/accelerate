@@ -64,7 +64,6 @@ a.current {
 /* CASE STUDY STYLES */
 article.case-study {
     margin: 40px 0 0;
-    background-color: lime;
 }
 aside.case-study-sidebar {
     float:left;
