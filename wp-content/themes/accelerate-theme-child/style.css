@@ -52,7 +52,7 @@
 }
 .nav-menu .current-menu-item >a,
 .nav-menu .current_page_item >a {
-    font-weight: bold;
+    font-weight: 600;
 }
 a.current {
   font-weight: bold;
