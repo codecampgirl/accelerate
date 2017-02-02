@@ -50,6 +50,10 @@
 #masthead nav ul li a:active {
     
 }
+.nav-menu .current-menu-item >a,
+.nav-menu .current_page_item >a {
+    font-weight: bold;
+}
 a.current {
   font-weight: bold;
 }
@@ -181,7 +185,7 @@ aside.our-services-sidebar {
     margin: 0 40px 0 0 ;
     text-align: left;
 }
-}
+
 /* below does nothing */
 aside.our-services-sidebar p:nth-child(2) {
     float:right;

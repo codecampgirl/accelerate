@@ -51,6 +51,18 @@
             'rewrite' => array( 'slug' => 'services' ),
         )
     );
+    
+    register_post_type( 'about_services_intro',
+        array(
+            'labels' => array(
+                'name' => __( 'About Services Intro' ),
+                'singular_name' => __( 'services_intro' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array( 'slug' => 'about_services_intro' ),
+        )
+    );
 }
 add_action( 'init', 'create_custom_post_types' );
 

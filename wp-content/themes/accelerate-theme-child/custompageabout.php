@@ -35,13 +35,14 @@ get_header(); ?>
 		Here's a brief overview of our offered services.</p>
 	    </div>
 	    
-		<div class="services-section"> <!-- was a ul -->
-			<?php query_posts('posts_per_page=4&post_type=our_services'); ?>
+		<div class="services-section">
+			<?php query_posts('posts_per_page=6&post_type=our_services'); ?>
 			<?php while ( have_posts() ) : the_post();
 				// $service_description = get_field('service_description');
 				$icon = get_field('icon');
 				$size = "full";	
 			?>
+			
 			<article class="individual-services">
 					<div class="our-services-images">
 					    <a href="<?php the_permalink(); ?>">
