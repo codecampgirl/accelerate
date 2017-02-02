@@ -42,14 +42,14 @@
     margin: 0 10px;
     text-transform: uppercase;
 }
-#masthead nav ul li a:link {
+/* #masthead nav ul li a:link {
 }
 #masthead nav ul li a:hover {
 }
 #masthead nav ul li a:active {
-}
+} */
 .nav-menu .current-menu-item >a,
-.nav-menu .current_page_item >a {
+.nav-menu .current_page_item > a {
     font-weight: 600;
 }
 .button {
@@ -58,7 +58,6 @@
 .button:hover {
     background-color: #337f75;
 }
-
 
 /* CASE STUDY STYLES */
 article.case-study {
@@ -80,7 +79,7 @@ div.case-study-images img {
     height:auto;
 }
 aside.case-study-sidebar h2 {
-    font-weight: 500;
+    font-weight: 600;
 }
 aside.case-study-sidebar h5 {
     font-size: .8em;
@@ -179,72 +178,15 @@ aside.our-services-sidebar {
     margin: 0 40px 0 0 ;
     text-align: left;
 }
-
-/* below does nothing */
-aside.our-services-sidebar p:nth-child(2) {
-    float:right;
-    width: 70%/* 606px */ /* 314px */;
-    margin: 0 40px 0 0 ;
-    text-align: right;
-    background-color: blue;
-}
-/* end */
 aside.our-services-sidebar p {
-    margin: 0;
-    padding: 0;
-    /* background-color: purple; */
-}
-div.our-services-images {
-    /*float: right;*/
-    /*width: 22%; /* 314px */ /* 606px */;*/
+    margin: 0 0 2.5em 0;
 }
 div.our-services-images:nth-child(2) {
-    float: left;
-    width: 22%; /* 314px */ /* 606px */;
+    width: 22%; /* lets icons float up right on individual about-services pages */
 }
-li.about-services {
-
-  line-height:1.5em;
-  border-bottom:1px solid #ccc;
-  float:left;
-  display:inline;
-  
-
-}
-li.our-services-images img {
-    margin-top: 0px;
-    max-width: 100%;
-    height:auto;
-}
-li.our-services-images img:nth-child(2) {
-    float: left;
-}
-/* li {
-    float:left;
-  display:inline;
-} */
-
-/* div.our-services-images img:nth-child( {
-    /* display: block; */
-#double li  { width:50%;}
-    margin-top: 0px;
-    max-width: 100%;
-    height:auto;
-    /* float: left;
-} */
 aside.our-services-sidebar h2 {
-    font-weight: 500;
+    font-weight: 600;
 }
-/* aside.our-services-sidebar h5 {
-    font-size: 14px;
-    font-weight: 500;
-    color: #757E85;
-} */
-/* aside.our-services-sidebar h6 {
-    font-size: 15px;
-    font-weight: 500;
-    color: #5F676C;
-} */
 aside.our-services-sidebar p {
     padding-top: 1em;
 }
@@ -306,13 +248,11 @@ aside.our-services-sidebar p {
 /* BLOG POST ON HOMEPAGE */
 .recent-posts {
 	overflow: hidden;
-	/* background-color: #dedede; */ /* for testing purposes only */
 }
 .blog-post {
 	width: 44.75%;
 	padding-right: 50px;
 	float: left;
-	/* background-color: yellow; */ /* for testing purposes only */
 }
 .blog-post h4 {
 	font: 16px 'Montserrat';
@@ -396,7 +336,6 @@ ul.tweets {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
 /* SOCIAL MEDIA MENU IN FOOTER */
 .social-media-navigation ul {
   margin: 0;
@@ -424,11 +363,7 @@ ul.tweets {
 .social-media-navigation ul li:hover {
 	background-color: #45ac9d;
 }
-/* .social-media-navigation ul li a:hover {
-    color: #333;
-} */
 /* END SOCIAL MEDIA MENU IN FOOTER */
-
 
 /* CONTACT PAGE AND NINJA CONTACT FORM */
 /*.contact-form {
@@ -468,8 +403,6 @@ ul.tweets {
 #nf-field-4:hover{
  background-color: #337f75;
  }
-
-
 
 /* FOOTER SITE NAME LINK */
 a.sitename:link,
