@@ -40,22 +40,17 @@
 #masthead nav ul li {
     float: left;
     margin: 0 10px;
+    text-transform: uppercase;
 }
 #masthead nav ul li a:link {
-    
 }
 #masthead nav ul li a:hover {
-    
 }
 #masthead nav ul li a:active {
-    
 }
 .nav-menu .current-menu-item >a,
 .nav-menu .current_page_item >a {
     font-weight: 600;
-}
-a.current {
-  font-weight: bold;
 }
 .button {
     background: none repeat scroll 0 0 #45ac9d;
@@ -174,7 +169,6 @@ h1.about-taxi {
 }
 /* Ann changes end */
     
-}
 /* Begin copied CASE STUDY STYLES, edit to rename for our_services */
 article.our-services {
     margin: 40px 0 0;
