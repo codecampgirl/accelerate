@@ -29,14 +29,28 @@ get_header(); ?>
 
     <section>
 	<div class="site-content">
-	    <div class="our-services">
-		<h6>Our Services</h6>
-		<p>We take pride in our clients and the content we create for them.<br>
-		Here's a brief overview of our offered services.</p>
-	    </div>
+		<div class="our-services"> <!-- displays the intro text -->
+		    <?php query_posts('posts_per_page=2&post_type=about_services_intro'); ?>
+		    <?php while ( have_posts()) : the_post();
+			$services_intro_header = get_field('services_intro_header');
+			$services_intro_description = get_field('services_intro_description');
+		    ?>
+		</div>
+			<article class="our-services">
+					<div class="our-services">
+						<h6><?php the_title(); ?></a></h6>
+						<!-- <p><?php // echo $services_intro_header; ?></p>
+						<p><?php // echo $services_intro_description; ?></p> -->
+						<p><?php the_content(); ?></p>
+					</div>
+			</article>
+		    
+		    <?php endwhile; ?>
+		    <?php wp_reset_query();  // resets the altered query back to the original ?>
 	    
-		<div class="services-section">
-			<?php query_posts('posts_per_page=6&post_type=our_services'); ?>
+	    
+		<div class="services-section"> <!-- displays the services text and icons -->
+			<?php query_posts('posts_per_page=4&post_type=our_services'); ?>
 			<?php while ( have_posts() ) : the_post();
 				// $service_description = get_field('service_description');
 				$icon = get_field('icon');

@@ -56,7 +56,7 @@
         array(
             'labels' => array(
                 'name' => __( 'About Services Intro' ),
-                'singular_name' => __( 'services_intro' )
+                'singular_name' => __( 'about_service_intro' )
             ),
             'public' => true,
             'has_archive' => false,
